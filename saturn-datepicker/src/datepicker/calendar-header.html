@@ -1,6 +1,6 @@
 <div class="mat-calendar-header">
   <div class="mat-calendar-controls">
-    <button mat-button type="button" class="mat-calendar-period-button"
+    <!-- <button mat-button type="button" class="mat-calendar-period-button"
             (click)="currentPeriodClicked()" [attr.aria-label]="periodButtonLabel"
             cdkAriaLive="polite">
       {{periodButtonText}}
@@ -10,12 +10,20 @@
 
     <div class="mat-calendar-spacer"></div>
 
-    <ng-content></ng-content>
+    <ng-content></ng-content> -->
 
     <button mat-icon-button type="button" class="mat-calendar-previous-button"
             [disabled]="!previousEnabled()" (click)="previousClicked()"
             [attr.aria-label]="prevButtonLabel">
     </button>
+
+    <div class="mat-calendar-spacer">
+        <button mat-button type="button" class="mat-calendar-period-button"
+            (click)="currentPeriodClicked()" [attr.aria-label]="periodButtonLabel"
+            cdkAriaLive="polite">
+        {{periodButtonText}}
+        </button>
+    </div>
 
     <button mat-icon-button type="button" class="mat-calendar-next-button"
             [disabled]="!nextEnabled()" (click)="nextClicked()"

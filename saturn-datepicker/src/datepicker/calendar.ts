@@ -71,7 +71,7 @@ export class SatCalendarHeader<D> {
   get periodButtonText(): string {
     if (this.calendar.currentView == 'month') {
       return this._dateAdapter
-          .format(this.calendar.activeDate, this._dateFormats.display.monthYearLabel)
+          .format(this.calendar.activeDate, this._dateFormats.display.monthYearA11yLabel)
               .toLocaleUpperCase();
     }
     if (this.calendar.currentView == 'year') {

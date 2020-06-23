@@ -7,7 +7,7 @@
       [attr.colspan]="numCols"
       [style.paddingTop]="_cellPadding"
       [style.paddingBottom]="_cellPadding">
-    {{label}}
+    <!-- {{label}} -->
   </td>
 </tr>
 
@@ -25,7 +25,7 @@
       [attr.colspan]="_firstRowOffset"
       [style.paddingTop]="_cellPadding"
       [style.paddingBottom]="_cellPadding">
-    {{_firstRowOffset >= labelMinRequiredCells ? label : ''}}
+    <!-- {{_firstRowOffset >= labelMinRequiredCells ? label : ''}} -->
   </td>
   <td *ngFor="let item of row; let colIndex = index"
       role="gridcell"

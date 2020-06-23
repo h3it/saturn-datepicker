@@ -8,7 +8,7 @@ I created this repository and this package due to it takes a lot of time to cont
 
 [![Material date range picker](screenshot.png)](https://stackblitz.com/edit/angular-4cfnyl)
 
-## [DEMO with extra features examples](https://stackblitz.com/edit/angular-4cfnyl)
+<!-- ## [DEMO with extra features examples](https://stackblitz.com/edit/angular-4cfnyl) -->
 ## Advantages
 1) You can change order of views: month, year and multi-year
 2) You can keep calendar to be opened after selecting a date (in singular range mode) or a range of dates (in range mode)

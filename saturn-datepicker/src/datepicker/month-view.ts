@@ -324,11 +324,12 @@ export class SatMonthView<D> implements AfterContentInit {
   private _initWeekdays() {
     const firstDayOfWeek = this._dateAdapter.getFirstDayOfWeek();
     const narrowWeekdays = this._dateAdapter.getDayOfWeekNames('narrow');
+    const shortWeekdays = this._dateAdapter.getDayOfWeekNames('short');
     const longWeekdays = this._dateAdapter.getDayOfWeekNames('long');
 
     // Rotate the labels for days of the week based on the configured first day of the week.
     let weekdays = longWeekdays.map((long, i) => {
-        return {long, narrow: narrowWeekdays[i]};
+        return {long, narrow: narrowWeekdays[i], short: shortWeekdays[i].substring(0, shortWeekdays[i].length - 1)};
     });
     this._weekdays = weekdays.slice(firstDayOfWeek).concat(weekdays.slice(0, firstDayOfWeek));
   }

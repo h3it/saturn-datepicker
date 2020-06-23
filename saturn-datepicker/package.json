@@ -1,9 +1,9 @@
 {
-  "name": "saturn-datepicker",
-  "version": "8.0.5",
-  "repository": "https://github.com/SaturnTeam/saturn-datepicker",
+  "name": "extend-saturn-datepicker",
+  "version": "0.0.8",
+  "repository": "",
   "keywords": ["angular", "material", "datepicker", "range datepicker"],
-  "author": "saturn <saturn@saturn.team>",
+  "author": "",
   "license": "MIT",
   "private": false,
   "peerDependencies": {
